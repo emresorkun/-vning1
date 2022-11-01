@@ -1,4 +1,5 @@
-﻿using System.Xml.Linq;
+﻿using System.Security.Cryptography.X509Certificates;
+using System.Xml.Linq;
 
 namespace Övning1
 {
@@ -6,7 +7,10 @@ namespace Övning1
     {
         static void Main(string[] args)
         {
-            for (int i = 0; i < length; i++)
+            Console.WriteLine("how many workers do you have?");
+            int  numberOfWorkers ;
+            numberOfWorkers = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < numberOfWorkers; i++)
             {
                 Console.WriteLine("Please enter the name: ");
                 string name;
